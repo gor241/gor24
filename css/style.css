@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: #e8e8e8;
+}
+
+.content {
+  max-width: 840px;
+  padding: 130px 0px 840px 0px;
+  margin: 0px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-top {
+  padding: 0px 0px 0px 0px;
+}
+
+.content-title {
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+}
+
+.content-top-list {
+  margin: 0px 0px 80px 0px;
+}
+
+.content-top-list li {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.content-top-list li::before {
+  content: "";
+  background: url(../img/icons/li.png) left no-repeat;
+  padding: 0px 35px 0px 0px;
+}
+
+.content-top-list li:nth-child(1) {
+  text-decoration: line-through;
+  color: #273d46;
+}
+
+.content-top-list li:nth-child(2) {
+  font-weight: 700;
+  color: #273d46;
+}
+
+.content-top-list li:nth-child(3) {
+  font-style: italic;
+  color: #273d46;
+}
+
+.content-top-list li:nth-child(4) {
+  text-transform: uppercase;
+  color: #273d46;
+}
+
+.content-top-list li:nth-child(2):hover {
+  color: red;
+}
+
+.content-top-list li:nth-child(2):hover::before {
+  content: "";
+  background: url(../img/icons/check.png) left no-repeat;
+  padding: 0px 35px 0px 0px;
+}
+
+.content-button {
+  height: 44px;
+  -webkit-box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+          box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+  background-color: #80b7b3;
+  line-height: 44px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 0px 30px 0px 30px;
+  margin: 0px 0px 0px 30px;
+}
+
+.content-button span:after {
+  content: "";
+  background: url(../img/icons/strelka.png) right no-repeat;
+  padding: 0px 30px 0px 0px;
+}
+
+.content-button:hover {
+  background-color: #3a5856;
+}
+
+.content-button:active {
+  background-color: #818181;
+}
+
+.content-botton {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 100px 0px 0px 0px;
+}
+
+.content-botton p:first-child {
+  margin: 0px 0px 30px 0px;
+}
+
+.content-botton p:first-child::first-line {
+  color: red;
+}
+
+.content-botton p:last-child::first-letter {
+  font-size: 30px;
+  color: red;
+}
