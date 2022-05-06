@@ -200,6 +200,6 @@ body {
 }
 
 .content-botton p:last-child::first-letter {
-  font-size: 30px;
+  font-size: 20px;
   color: red;
 }
